@@ -1,0 +1,11 @@
+email: admin@kuendig.ch
+fullname: 'Michael Kündig'
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$MnMDIDyLIKcB04637BQRQeqCJoEBAX.kHSyuURkc.flz3g67oLR96
