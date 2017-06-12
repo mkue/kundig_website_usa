@@ -1,0 +1,25 @@
+{
+  "name": "kundig_website_usa",
+  "version": "1.0.0",
+  "description": "Kundig Website USA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkue/kundig_website_usa.git"
+  },
+  "author": "Michael Kündig",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkue/kundig_website_usa/issues"
+  },
+  "homepage": "https://github.com/mkue/kundig_website_usa#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
