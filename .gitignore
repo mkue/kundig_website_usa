@@ -1,5 +1,6 @@
-/logs/
-/cache/
+logs/
+cache/
+images/
 .DS_Store
-/user/themes/landio/.sass-cache
-/node_modules
+user/themes/landio/.sass-cache
+node_modules

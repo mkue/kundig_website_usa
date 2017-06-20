@@ -1,12 +1,7 @@
-<nav class="navbar {% if page.header.navbar_class %}{{ page.header.navbar_class }}{% else %}navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top{% endif %}">
+<nav class="navbar {% if page.title == 'Home' %} bg-inverse bg-inverse-custom navbar-fixed-top {% else %} navbar-light {% endif %}">
     <div class="container">
         <a class="navbar-brand" href="{% if not site.logo.url %}{{ base_url_absolute }}{% else %}{{ site.logo.url }}{% endif %}">
-            {% if site.logo.icon %}
-                <span class="icon-{{ site.logo.icon }}"></span>
-            {% endif %}
-            {% if site.logo.text %}
-                <span class="sr-only">{{ site.logo.text }}</span>
-            {% endif %}
+            <img src={{ url('theme://img/logo_kundig_ag.png') }} width="165" height="32" alt="">
         </a>
         <a class="navbar-toggler hidden-md-up pull-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
             &#9776;
@@ -33,7 +28,7 @@
                         <a class="nav-link" href="{{ mitem.link }}">{{ mitem.text }}</a>
                     </li>
                 {% endfor %}
-                {% for module in page.collection() %}
+                <!-- {% for module in page.collection() %}
                     {% if not module.header.hidemenu %}
                         {% set current_page = (module.active or module.activeChild)
                             ? 'current'
@@ -42,7 +37,7 @@
                             <a class="nav-link" href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a>
                         </li>
                     {% endif %}
-                {% endfor %}
+                {% endfor %} -->
             </ul>
         </div>
     </div>

@@ -1,0 +1,21 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block header %}{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row text-center m-t-lg m-b-lg">
+            <div class="col-xs-12">
+                {{ page.media['contact_us.jpg'].cropZoom(800,350).html('', '', 'img-responsive img-centered') }}
+            </div>
+        </div>
+
+        <div class="col-md-8 col-md-offset-2 col-xl-6 col-xl-offset-3">
+            <div class="row">
+                {{ page.content }}
+                {% include "forms/form.html.twig" %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}{% endblock %}
