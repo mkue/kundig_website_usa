@@ -34,7 +34,9 @@
         {% endblock %}
 
         {% block header %}
-            {% include 'partials/header.html.twig' %}
+            {% if page.title == 'Home' %}
+                {% include 'partials/header.html.twig' %}
+            {% endif %}
         {% endblock %}
 
         {% block body %}

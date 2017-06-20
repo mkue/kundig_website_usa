@@ -1,9 +1,10 @@
 ---
-title: 'Contact Us'
-slug: contact
+title: Home
+menu: 'Home (old)'
+'<!-- published': 'false -->'
 form:
     name: my-nice-form
-    action: /contact
+    action: /home
     fields:
         -
             name: name
@@ -11,7 +12,7 @@ form:
             label: Name
             classes: 'form-control form-control-lg'
             placeholder: 'Enter your name'
-            autocomplete: true
+            autocomplete: 'on'
             type: text
             validate:
                 required: true
@@ -56,6 +57,20 @@ form:
             message: 'Thank you for your feedback!'
         -
             display: thankyou
+onpage_menu: true
+content:
+    items: '@self.modular'
+    order:
+        by: default
+        dir: asc
+        custom:
+            - _intro
+            - _features
+            - _video
+            - _pricing
+            - _testimonials
+            - _text
+            - _news
+            - _contact
 ---
 
-# Contact Us {.text-center .m-b-lg}
