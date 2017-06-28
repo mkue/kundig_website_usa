@@ -1,6 +1,6 @@
 ---
 title: Home
-menu: 'Home (old)'
+menu: old
 '<!-- published': 'false -->'
 form:
     name: my-nice-form

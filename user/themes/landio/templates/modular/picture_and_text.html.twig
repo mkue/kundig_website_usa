@@ -1,6 +1,26 @@
-<section class="section-intro bg-faded text-center hidden-overflow">
+<section>
     <div class="container">
-        {% block header %}{% endblock %}
-        {{ page.content }}
+        <div class="row m-b-lg">
+
+            {% if page.header.text_position == "left" %}
+                <div class="col-sm-6">
+                    {{ page.content }}
+                </div>
+            {% endif %}
+
+            <div class="col-sm-6">
+                {% if page.header.animated == true %}
+                    {{ page.media['picture.jpg'].html('', '', 'img-responsive') }}
+                {% else %}
+                    {{ page.media['picture.jpg'].html('', '', 'img-responsive wp wp-2') }}
+                {% endif %}
+            </div>
+
+            {% if page.header.text_position != "left" %}
+                <div class="col-sm-6 text-left">
+                    {{ page.content }}
+                </div>
+            {% endif %}
+        </div>
     </div>
 </section>

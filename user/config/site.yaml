@@ -1,4 +1,4 @@
-title: 'Kundig Sanding'
+title: KUNDIG
 default_lang: en
 author:
   name: 'Michael Kündig'
@@ -6,6 +6,8 @@ author:
 taxonomies:
   - category
   - tag
+metadata:
+  description: 'My Grav Site'
 summary:
   enabled: true
   format: short

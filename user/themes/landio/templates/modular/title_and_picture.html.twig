@@ -1,0 +1,15 @@
+<section class="m-t-lg m-b-lg">
+    <div class="container">
+        {% if page.header.title %}
+            <h1 class="wp wp-1 text-center">{{ page.header.title }}</h1>
+        {% endif %}
+        <div class="row m-t-md">
+            <div class="col-xs-12">
+                {{ page.media['picture.jpg'].html('', '', 'img-responsive wp wp-1') }}
+            </div>
+            <div class="m-t-lg col-md-8 col-md-offset-2">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</section>

@@ -5,12 +5,12 @@
         $('.wp-1').waypoint(function() {
             $('.wp-1').addClass('animated fadeInUp');
         }, {
-            offset: '75%'
+            offset: '85%'
         });
         $('.wp-2').waypoint(function() {
             $('.wp-2').addClass('animated fadeInUp');
         }, {
-            offset: '75%'
+            offset: '85%'
         });
         $('.wp-3').waypoint(function() {
             $('.wp-3').addClass('animated fadeInUp');
@@ -25,12 +25,12 @@
         $('.wp-5').waypoint(function() {
             $('.wp-5').addClass('animated fadeInRight');
         }, {
-            offset: '50%'
+            offset: '90%'
         });
         $('.wp-6').waypoint(function() {
             $('.wp-6').addClass('animated fadeInLeft');
         }, {
-            offset: '50%'
+            offset: '90%'
         });
         $('.wp-7').waypoint(function() {
             $('.wp-7').addClass('animated fadeInUp');

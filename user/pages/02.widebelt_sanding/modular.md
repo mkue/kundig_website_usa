@@ -1,7 +1,8 @@
 ---
-title: Widebelt Sanding
-menu: Widebelt Sanding
+title: 'Widebelt Sanding'
+menu: 'Widebelt Sanding'
 onpage_menu: true
 content:
-  items: '@self.modular'
+    items: '@self.modular'
 ---
+
